@@ -15,67 +15,77 @@
   };
 
   const COMMANDS = new Map([
-    [
-      'a',
-      {
-        name: 'AWS',
-        suggestions: [
-          'a/cognito/v2/idp/user-pools',
-          'a/dynamodbv2#item-explorer',
-        ],
-        url: 'https://us-west-2.console.aws.amazon.com/console/home',
-      },
-    ],
-    [
-      'b',
-      {
-        name: 'Dribbble',
-        searchTemplate: '/search/{}',
-        suggestions: [
-          'b/shots/popular/product-design',
-          'b/shots/popular/web-design',
-        ],
-        url: 'https://dribbble.com/shots/popular',
-      },
-    ],
-    [
-      'c',
-      {
-        name: 'Calendar',
-        searchTemplate: '/calendar/u/0/r/search?q={}',
-        suggestions: ['c/calendar/u/1/r', 'c/calendar/u/2/r'],
-        url: 'https://calendar.google.com/calendar/u/0/r',
-      },
-    ],
+    // [
+    //   'a',
+    //   {
+    //     name: 'AWS',
+    //     suggestions: [
+    //       'a/cognito/v2/idp/user-pools',
+    //       'a/dynamodbv2#item-explorer',
+    //     ],
+    //     url: 'https://us-west-2.console.aws.amazon.com/console/home',
+    //   },
+    // ],
+    // [
+    //   'b',
+    //   {
+    //     name: 'Dribbble',
+    //     searchTemplate: '/search/{}',
+    //     suggestions: [
+    //       'b/shots/popular/product-design',
+    //       'b/shots/popular/web-design',
+    //     ],
+    //     url: 'https://dribbble.com/shots/popular',
+    //   },
+    // ],
+    // [
+    //   'c',
+    //   {
+    //     name: 'Calendar',
+    //     searchTemplate: '/calendar/u/0/r/search?q={}',
+    //     suggestions: ['c/calendar/u/1/r', 'c/calendar/u/2/r'],
+    //     url: 'https://calendar.google.com/calendar/u/0/r',
+    //   },
+    // ],
+    ['b', { name: 'Bilibili', url: 'https://www.bilibili.com/' }],
+    ['c', { name: 'ChatGPT', url: 'https://www.v4nish.top/' }],
+    // [
+    //   'd',
+    //   {
+    //     name: 'Drive',
+    //     searchTemplate: '/drive/u/0/search?q={}',
+    //     suggestions: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
+    //     url: 'https://drive.google.com/drive/u/0/my-drive',
+    //   },
+    // ],
     [
       'd',
       {
-        name: 'Drive',
-        searchTemplate: '/drive/u/0/search?q={}',
-        suggestions: ['d/drive/u/1/my-drive', 'd/drive/u/2/my-drive'],
-        url: 'https://drive.google.com/drive/u/0/my-drive',
+        name: 'Discord',
+        suggestions: ['o/channels/803833399684628520#friends'],
+        url: 'https://discord.com/channels/@me',
       },
     ],
-    [
-      'e',
-      {
-        name: 'DALL·E',
-        suggestions: ['e/history', 'e/collections'],
-        url: 'https://labs.openai.com/',
-      },
-    ],
-    [
-      'f',
-      {
-        name: 'Figma',
-        suggestions: [
-          'f/file/new',
-          'f/file/new?editor_type=whiteboard',
-          'f/community',
-        ],
-        url: 'https://www.figma.com/files/recent',
-      },
-    ],
+    // [
+    //   'e',
+    //   {
+    //     name: 'DALL·E',
+    //     suggestions: ['e/history', 'e/collections'],
+    //     url: 'https://labs.openai.com/',
+    //   },
+    // ],
+    // [
+    //   'f',
+    //   {
+    //     name: 'Figma',
+    //     suggestions: [
+    //       'f/file/new',
+    //       'f/file/new?editor_type=whiteboard',
+    //       'f/community',
+    //     ],
+    //     url: 'https://www.figma.com/files/recent',
+    //   },
+    // ],
     [
       'g',
       {
@@ -90,40 +100,40 @@
         url: 'https://github.com',
       },
     ],
-    [
-      'h',
-      {
-        name: 'Hypem',
-        searchTemplate: '/search/{}',
-        suggestions: ['h/stack', 'h/mixes', 'h/popular/lastweek', 'h/tags'],
-        url: 'https://hypem.com/popular',
-      },
-    ],
-    ['i', { name: 'ChatGPT', url: 'https://chat.openai.com/chat' }],
-    [
-      'k',
-      {
-        name: 'Keep',
-        searchTemplate: '/u/0/#search/text={}',
-        suggestions: ['k/u/1', 'k/u/2'],
-        url: 'https://keep.google.com/u/0',
-      },
-    ],
-    [
-      'l',
-      {
-        name: 'LinkedIn',
-        searchTemplate: '/search/results/all/?keywords={}',
-        suggestions: ['l/in/me/', 'l/messaging', 'l/jobs'],
-        url: 'https://www.linkedin.com/feed/',
-      },
-    ],
+    // [
+    //   'h',
+    //   {
+    //     name: 'Hypem',
+    //     searchTemplate: '/search/{}',
+    //     suggestions: ['h/stack', 'h/mixes', 'h/popular/lastweek', 'h/tags'],
+    //     url: 'https://hypem.com/popular',
+    //   },
+    // ],
+    ['h', { name: 'Hifini', url: 'https://www.hifini.com/' }],
+    // [
+    //   'k',
+    //   {
+    //     name: 'Keep',
+    //     searchTemplate: '/u/0/#search/text={}',
+    //     suggestions: ['k/u/1', 'k/u/2'],
+    //     url: 'https://keep.google.com/u/0',
+    //   },
+    // ],
+    // [
+    //   'l',
+    //   {
+    //     name: 'LinkedIn',
+    //     searchTemplate: '/search/results/all/?keywords={}',
+    //     suggestions: ['l/in/me/', 'l/messaging', 'l/jobs'],
+    //     url: 'https://www.linkedin.com/feed/',
+    //   },
+    // ],
     [
       'm',
       {
         name: 'Mail',
         suggestions: ['m/u/1/inbox', 'm/u/2/inbox'],
-        url: 'https://mail.proton.me/u/0/inbox',
+        url: 'https://mail.google.com/mail/u/0/#inbox',
       },
     ],
     [
@@ -137,23 +147,24 @@
         url: 'https://www.notion.so',
       },
     ],
-    [
-      'o',
-      {
-        name: 'Discord',
-        suggestions: ['o/channels/803833399684628520#friends'],
-        url: 'https://discord.com/channels/@me',
-      },
-    ],
-    [
-      'p',
-      {
-        name: 'Products',
-        searchTemplate: '/search?q={}',
-        suggestions: ['p/products', 'p/topics', 'p/time-travel'],
-        url: 'https://www.producthunt.com',
-      },
-    ],
+    // [
+    //   'o',
+    //   {
+    //     name: 'Discord',
+    //     suggestions: ['o/channels/803833399684628520#friends'],
+    //     url: 'https://discord.com/channels/@me',
+    //   },
+    // ],
+    // [
+    //   'p',
+    //   {
+    //     name: 'Products',
+    //     searchTemplate: '/search?q={}',
+    //     suggestions: ['p/products', 'p/topics', 'p/time-travel'],
+    //     url: 'https://www.producthunt.com',
+    //   },
+    // ],
+    ['p', { name: '1Password', url: 'https://my.1password.com/signin' }],
     [
       'r',
       {
@@ -168,14 +179,15 @@
         url: 'https://www.reddit.com',
       },
     ],
-    [
-      's',
-      {
-        name: 'Slack',
-        suggestions: ['s/client/T09M5UWSV#shiftnudge'],
-        url: 'https://app.slack.com',
-      },
-    ],
+    // [
+    //   's',
+    //   {
+    //     name: 'Slack',
+    //     suggestions: ['s/client/T09M5UWSV#shiftnudge'],
+    //     url: 'https://app.slack.com',
+    //   },
+    // ],
+    ['s', { name: 'Synology', url: 'https://jing8263xiao.cn3.quickconnect.cn/' }],
     [
       't',
       {
@@ -188,7 +200,8 @@
         url: 'https://twitter.com/home',
       },
     ],
-    ['u', { name: 'Supabase', url: 'https://app.supabase.com/projects' }],
+    ['t', { name: 'Translate', url: 'https://translate.google.com/' }],
+    ['u', { name: 'Umami', url: 'https://log.v4nish.top/dashboard' }],
     [
       'v',
       {
@@ -215,16 +228,16 @@
         url: 'https://youtube.com/feed/subscriptions',
       },
     ],
-    [
-      '0',
-      {
-        name: 'localhost',
-        searchTemplate: ':{}',
-        suggestions: ['0 54323', '0 8000'],
-        url: 'http://localhost:3000',
-      },
-    ],
-    ['?', { name: 'README', url: 'https://github.com/xvvvyz/tilde' }],
+    // [
+    //   '0',
+    //   {
+    //     name: 'localhost',
+    //     searchTemplate: ':{}',
+    //     suggestions: ['0 54323', '0 8000'],
+    //     url: 'http://localhost:3000',
+    //   },
+    // ],
+    // ['?', { name: 'README', url: 'https://github.com/xvvvyz/tilde' }],
   ]);
 </script>
 
