@@ -15,6 +15,7 @@
   };
 
   const COMMANDS = new Map([
+    ['1', { name: '1Password', url: 'https://my.1password.com/signin' }],
     ['2', { name: 'V2ex', url: 'https://v2ex.com/' }],
     ['a', { name: 'AI', url: 'https://ai.com/' }],
     // [
@@ -60,14 +61,14 @@
     //     url: 'https://drive.google.com/drive/u/0/my-drive',
     //   },
     // ],
-    // [
-    //   'd',
-    //   {
-    //     name: 'Discord',
-    //     suggestions: ['o/channels/803833399684628520#friends'],
-    //     url: 'https://discord.com/channels/@me',
-    //   },
-    // ],
+    [
+      'd',
+      {
+        name: 'Discord',
+        suggestions: ['o/channels/803833399684628520#friends'],
+        url: 'https://discord.com/channels/@me',
+      },
+    ],
     // [
     //   'e',
     //   {
@@ -89,7 +90,6 @@
     //   },
     // ],
     ['g', { name: 'Google', url: 'https://www.google.com/' }],
-
     // [
     //   'h',
     //   {
@@ -169,7 +169,6 @@
     //   },
     // ],
     ['o', { name: 'Openai', url: 'https://platform.openai.com/account/usage' }],
-    ['p', { name: '1Password', url: 'https://my.1password.com/signin' }],
     // [
     //   'r',
     //   {
